@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  transition: transform 1s;
+
+}
+.navbar{
+  background: #2c3e50;
+}
+.nav-item a{
+  font-size: 1.3rem;
+}
+.right-side h1{
+  line-height: 90px;
+  color:#2c2c54;
+}
+.mainheader{
+  height: 700px;
+  background-color: #ecf0f1;
+}
+.covid-root img{
+  animation: spinning 5s linear infinite;
+}
+@keyframes spinning{
+  0% { transform:rotate(0);}
+  100% { transform:rotate(360deg);}
+}
+.left-side img{
+  animation: zooming 4s linear infinite;
+}
+@keyframes zooming{
+  0%{ transform: scale(.75);}
+  20%{ transform: scale(1);}
+  40%{ transform: scale(.75);}
+  60%{ transform: scale(1);}
+  80%{ transform: scale(.75);}
+  100%{ transform: scale(.75);}
+}
+.Updates-div{
+  margin: 200px 0px;
+}
+.Updates{
+  margin: 50px 0px 50px 0px;
+}
+.update-div{
+  background-color:#2c3e50;
+  padding-top: 2px;
+  padding-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Updates h1{
+  color: #2c2c54;
+  font-style:normal;
+  font-size: 3rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.preventions{
+  background-color:#34ace0;
+  padding-top: 2px;
+  padding-bottom: 30px;
+}
+.Updates .text-capitalized{
+  color:#fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.content h1{
+  font-size: 4.5rem;
+  cursor: pointer;
+  transition: transform 2s
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content h1:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.about-us{
+  height: 700px;
+  background-color: #d1ccc0;
+}
+.country-div{
+  background-color: #ffbe76;
+}
+.country-div h1{
+  font-size: 3rem;
+}
+.sympimg{
+  height: 100px;
+  width: 100px;
+}
+.preventiondivs{
+  transition: transform 2s
+}
+.preventiondivs:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.sympdiv{
+  transition: transform 1s;
+}
+.sympdiv:hover{
+  transform: scale(1.3);
+    cursor: pointer;
 }
